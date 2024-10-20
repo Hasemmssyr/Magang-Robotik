@@ -33,7 +33,7 @@ private:
             double angleRad = angles[i] * rad; // ubah ke radian untuk menentukan nilai sin & cos
             double cosAngle = cos(angleRad);
             double sinAngle = sin(angleRad);
-            wheelSpeeds[i] = (Vx * cosAngle + Vy * sinAngle + (Lx + Ly) * omega) / R;
+            wheelSpeeds[i] = (Vx * cosAngle + Vy * sinAngle + sqrt(pow(Lx, 2) + pow(Ly, 2)) * omega) / R;
         }
     }
 
