@@ -1,0 +1,4 @@
+#FORMAT: [ID_Robot; Vx; Vy; Omega]
+Robot1; 1.0; 1.0; 1.0
+Robot2; 3.0; 7.0; 5.0
+Robot3; 4.0; 4.0; 5.0
