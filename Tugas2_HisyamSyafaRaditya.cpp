@@ -63,16 +63,6 @@ public:
             cerr << "Error opening file for writing." << endl;
         }
     }
-    // membuka file input
-    void loadVelocitiesFromFile(const string& filename, double& Vx, double& Vy, double& omega) {
-        ifstream inFile(filename);
-        if (inFile.is_open()) {
-            inFile >> Vx >> Vy >> omega;
-            inFile.close();
-        } else {
-            cerr << "Error opening file for reading." << endl;
-        }
-    }
 };
 
 // fungsi untuk membuka file dan menyimpan nilai input
